@@ -8,7 +8,13 @@ html {
   width: 80%;
   height: 100%;
   margin: 0;
+  opacity:1;
+transition: opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out;
 }
+
+html.load{
+    opacity: 0;  
+    transition: opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out;}
 
 .topnav {
   overflow: hidden;
@@ -109,9 +115,6 @@ body {
 	z-index:3;
 }
 
-.img + .embed {
-
-}
 .embed.soundcloud {
 	margin:2rem 0;
 	background-color:transparent;
@@ -315,6 +318,7 @@ header, main, {
 	width:100%;
 	background-color:#fff;
 }
+
 nav ul, footer ul {
 	line-height:1.65rem;
 }
@@ -486,10 +490,6 @@ font-size: 16px;
 
 }
 
-.homemenu {
-
-}
-
 .promoplayer {
 background-color: aliceblue;
 padding-top: 1em;
@@ -529,7 +529,7 @@ article.small .catalogue .title a {
 article.small .catalogue .artists {
 	overflow:hidden;
 word-wrap: normal
-	text-overflow:ellipsis;
+	text-overflow: ellipsis;
 }
 article.small a:hover + .catalogue .title a {
 	color:#0bf;
@@ -720,7 +720,7 @@ a.img {
 .sc .timeline:hover .playhead {
 	background-color:#0bf;
 }
-.sc .readout {}
+
 .sc .readout p {
 	margin:0;
 }

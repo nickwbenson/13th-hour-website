@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="releasepage" style="margin: auto">
+<html id="transition" class="releasepage load" style="margin: auto">
     
     <head>
     <meta charset="UTF-8" />
@@ -15,6 +15,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
         
@@ -148,6 +149,11 @@ Opening up the B-side, Loure delivers big time with ‘So Dive,’ bright percus
 <center><footer><div class="rainbow" style="font-size: 12px">&copy;2020 13th Hour Records, LLC. All rights reserved.</div></footer></center>
  
 </div></div>
+
+<script>
+  window.onload = function() {$('#transition').removeClass('load');};
+ window.onbeforeunload = function () {$('#transition').addClass('load');};
+</script>
      
 </main>
 </body>   

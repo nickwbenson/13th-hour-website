@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="releasepage" style="margin: auto">
+<html id="transition" class="releasepage load" style="margin: auto">
     
     <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
         <meta name="description" content="music for the witching hour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
         <link rel="stylesheet" href="test2.css">
-        <script src="server.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -129,6 +129,11 @@ Midlands bred and Bristol based producer deRijk (pronounced 'duh-rike,' like bik
 <center><footer><div class="rainbow" style="font-size: 12px">&copy;2020 13th Hour Records, LLC. All rights reserved.</div></footer></center>
  
 </div></div>
+
+<script>
+  window.onload = function() {$('#transition').removeClass('load');};
+ window.onbeforeunload = function () {$('#transition').addClass('load');};
+</script>
      
 </main>
 </body>   
