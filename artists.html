@@ -22,6 +22,10 @@
     </head>
     <body>  
 
+      <div id="loading">
+        <img id="loading-image" src="https://media.giphy.com/media/l4FGv5Ci0WIp8kYhO/giphy.gif" alt="Loading..." />
+      </div>
+
  <div id="page-container">
    <div id="content-wrap">  
 <center><h1 class="releases"><a style="color: #545454" class="socials" href="/index">Artists</a>
@@ -196,6 +200,12 @@
 <script>
   window.onload = function() {$('#transition').removeClass('load');};
  window.onbeforeunload = function () {$('#transition').addClass('load');};
+</script>
+
+<script>
+  $(window).load(function() {
+    $('#loading').hide();
+  });
 </script>
      
 </main>
