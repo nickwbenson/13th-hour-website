@@ -18,7 +18,11 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
     
-    <body>        
+    <body>    
+      
+      <div id="loading">
+        <img id="loading-image" src="https://media.giphy.com/media/l4FGv5Ci0WIp8kYhO/giphy.gif" alt="Loading..." />
+      </div>
   
 <script>  
 if (document.referrer.split('/')[2] === window.location.host)
@@ -151,6 +155,12 @@ Our debut EP was almost a year in the making: a four track compilation celebrati
 <script>
   window.onload = function() {$('#transition').removeClass('load');};
  window.onbeforeunload = function () {$('#transition').addClass('load');};
+</script>
+
+<script>
+  $(window).load(function() {
+    $('#loading').hide();
+  });
 </script>
      
 </main>
