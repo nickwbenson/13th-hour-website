@@ -73,6 +73,7 @@ margin-left: 2%;
 
 #footer {
   position: absolute;
+  bottom: 0;
   width: 100%;
   height: 2.5rem;            /* Footer height */
 }
@@ -179,8 +180,14 @@ span.mobilebreak {
     display: none;
 }
 
-@media only screen and (max-width:400px) {
-	html {width: 95%;}
+/* for contact page */
+
+#message {
+	resize: none;
+}
+
+@media only screen and (max-width:500px) {
+	html {width: 100%;}
 }
 
 @media only screen and (min-width: 841px) and (max-width:1051px) {
